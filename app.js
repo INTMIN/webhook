@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const port = 3000;
 
 // 解析JSON格式的请求体
 app.use(express.json());
@@ -34,7 +33,7 @@ app.post('/webhook', (req, res) => {
         method,
         params
     };
-    
+    console.log(response)
     res.json(response);
 });
 
@@ -68,6 +67,4 @@ app.delete('/webhook', (req, res) => {
     res.json(response);
 });
 
-app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
-});
+module.exports = app;
