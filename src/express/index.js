@@ -12,6 +12,8 @@ app.get('/webhook', (req, res) => {
     const params = req.params;
 
     const response = {
+        code:200,
+        message: '调用成功',
         headers,
         method,
         params
@@ -27,6 +29,8 @@ app.post('/webhook', (req, res) => {
     const params = req.body;
 
     const response = {
+        code:200,
+        message: '调用成功',
         headers,
         method,
         params
@@ -42,6 +46,8 @@ app.put('/webhook', (req, res) => {
     const params = req.body;
 
     const response = {
+        code:200,
+        message: '调用成功',
         headers,
         method,
         params
@@ -57,6 +63,8 @@ app.delete('/webhook', (req, res) => {
     const params = req.body;
 
     const response = {
+        code:200,
+        message: '调用成功',
         headers,
         method,
         params
