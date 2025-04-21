@@ -1,7 +1,8 @@
 {
-  "name": "",
+  "name": "webhook",
   "version": "1.0.0",
-  "description": "",
+  "author": "intmin",
+  "description": "webhook",
   "main": "src/functions/*.js",
   "scripts": {
     "start": "func start",
